@@ -1,0 +1,14 @@
+{
+  "name": "reactmarketclone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm ci && npm run build",
+    "server": "cd server && npm ci && tsc && node app.js",
+    "start": "npm run client && npm run server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
