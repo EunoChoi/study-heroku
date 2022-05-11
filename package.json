@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "client": "cd client && npm ci && npm run build",
-    "server": "cd server && npm ci && tsc && node app.js",
-    "start": "npm run client && npm run server",
+    "client": "cd client && npm ci && npm run build && cd ..",
+    "server": "cd server && npm ci --dev && npm run build && cd ..",
+    "heroku-prebuild": "npm run client && npm run server",
+    "start": "cd server && npm run start ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
